@@ -24,8 +24,6 @@ $(document).ready(function() {
   });
 
 
-
-
   $('.low').on("click", function(){
 
     $('.image-container article').sort(sort_article).appendTo('.image-container');
@@ -33,11 +31,9 @@ $(document).ready(function() {
           function sort_article(a,b){
           return ($(b).data('price')) < ($(a).data('price')) ? 1 : -1;
         }
-
     //   var sortedArray= [];
     //   var homeArray = $('.home');
     //   for (var i = 0 ; i < homeArray.length; i++){
-
     //   var dataPrice = $('.home')[i].dataset.price;
     //   sortedArray.push(dataPrice);
 
@@ -45,7 +41,6 @@ $(document).ready(function() {
     // // sort low to hi
     //   sortedArray.sort(function(a, b){return a - b});
     //   console.log(sortedArray);
-
   });
 
     $('.high').on("click", function(){
@@ -55,8 +50,6 @@ $(document).ready(function() {
           function sort_article(a,b){
           return ($(b).data('price')) > ($(a).data('price')) ? 1 : -1;
         }
-
-
     //   var sortedArray= [];
     //   var homeArray = $('.home');
     //   for (var i = 0 ; i < homeArray.length; i++){
@@ -71,6 +64,30 @@ $(document).ready(function() {
     //   console.log(sortedArray);
 
   });
+
+        // var checkbox = $('input').find('input:checked')
+
+
+
+//   $(".filters :checkbox").click(function() {
+//       $("input").show();
+//       $(".filters :checkbox:checked").each(function() {
+//       $("." + $(this).val()).show();
+//    });
+// });
+
+  // $('input').click(function(){
+  //   var category = $(this).val();
+
+  //   if (!$(this).attr('checked'))$('.'+ category).hide();
+  //   else $('.' + category).show();
+
+  // });
+
+
+
+
+
 
 
 });
